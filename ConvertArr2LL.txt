@@ -1,0 +1,18 @@
+
+// these solutions are only the functions since driver code is already given 
+// This series is going to be in Cpp language you can use chatgpt to convert the lang to you desired one 
+
+
+class Solution {
+  public:
+    Node* constructLL(vector<int>& arr) {
+        Node* head = new Node(arr[0]);
+        Node* ptr = head;
+        for(int i=1; i<arr.size(); i++){
+            Node* temp = new Node(arr[i]);
+            ptr->next = temp;
+            ptr = temp;
+        }
+    return head;
+    }
+}
