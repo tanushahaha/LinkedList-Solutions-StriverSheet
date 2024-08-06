@@ -1,0 +1,16 @@
+// these solutions are only the functions since driver code is already given 
+// This series is going to be in Cpp language you can use chatgpt to convert the lang to you desired one 
+
+class Solution {
+  public:
+    // Function to count nodes of a linked list.
+    int getCount(struct Node* head) {
+        int count =0;
+        Node* temp = head;
+        while(temp){
+            temp= temp->next;
+            count++;
+        }
+        return count;
+    }
+};

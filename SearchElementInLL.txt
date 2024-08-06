@@ -1,0 +1,15 @@
+// these solutions are only the functions since driver code is already given 
+// This series is going to be in Cpp language you can use chatgpt to convert the lang to you desired one 
+
+class Solution {
+  public:
+    // Function to count nodes of a linked list.
+    bool searchKey(int n, struct Node* head, int key) {
+        Node* temp = head;
+        while(temp){
+            if(temp-> data == key) return true;
+            temp = temp-> next;
+        }
+        return false;
+    }
+};
